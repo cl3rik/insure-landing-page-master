@@ -1,0 +1,245 @@
+body{
+    font-family: 'Karla', sans-serif;
+}
+
+@media (min-width: 992px) {
+    body{
+        max-width: 1440px;
+        margin: 0 auto;
+    }
+}
+
+h1{
+    font-family: 'DM Serif Display', serif;
+    font-size: 4.5rem;
+    line-height: 1;
+}
+h2{
+    font-family: 'DM Serif Display', serif;
+    font-size: 3.5rem;
+    line-height: 1;
+}
+h3{
+    font-family: 'DM Serif Display', serif;
+    font-size: 1.7rem;
+    line-height: 1;
+}
+
+/*********************************************************** Button */
+.button-light-custom{
+    border: 1.5px solid #ffffff;
+    color: #ffffff;
+    font-size: 0.9rem;
+    font-weight: 400;
+    text-decoration: none;
+}
+.button-dark-custom{
+    color:hsl(270, 9%, 17%);
+    font-size: 0.9rem;
+    font-weight: 700;
+    border: 1.5px solid hsl(270, 9%, 17%);
+    text-decoration: none;
+}
+/*********************************************************** Navbar */
+.navbar{
+    padding: 0 11% 0 11%;
+}
+.navbar-nav{
+    font-size: 0.8rem;
+    font-weight: 700;
+    font-variant: small-caps;
+    letter-spacing: 0.08rem;
+}
+
+/*********************************************************** Header */
+.intro {
+    background-color: hsl(256, 26%, 20%);
+    color: #ffffff;
+
+}
+.intro-right-pattern{
+    background-image: url(../images/bg-pattern-intro-right-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: right;
+    position: absolute;
+    z-index: 10;
+    right: 0;
+    height: 440px;
+    width: 440px;
+}
+.intro-left-pattern{
+    background-image: url(../images/bg-pattern-intro-left-desktop.svg);
+    background-repeat: no-repeat;
+    position: absolute;
+    height: 550px;
+    width: 450px;
+    top:500px;
+    left: 0;
+}
+.intro-sx{
+    padding: 7% 3% 0 12%;
+    position: relative;
+    z-index: 10;
+}
+.intro-rx {
+    background-image: url(../images/image-intro-desktop.jpg);
+    background-repeat: no-repeat;
+    position: absolute;
+    top:200px;
+    right: -15px;
+    height: 650px;
+    z-index: 1;
+}
+.line-light{
+    border: 0.5px solid #ffffff;
+    width: 150px;
+}
+.line-dark{
+    border: 0.5px solid hsl(256, 26%, 20%);
+    opacity: 20%;
+    width: 150px;
+}
+
+/*********************************************************** Middle */
+.middle{
+    padding: 20% 12% 10% 12%;
+}
+
+.middle p{
+    color: hsl(273, 4%, 51%);
+}
+.how-we-work-section{
+    background-image: url(../images/bg-pattern-how-we-work-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: right;
+    margin: 15% 0;
+    padding: 4% 6%;
+    background-color: hsl(256, 26%, 20%);
+    color: #ffffff;
+}
+
+/*********************************************************** Footer */
+
+footer{
+    margin-top: -10%;
+    padding: 0 12% 0 12%;
+    background-color: hsl(0, 0%, 98%);
+    background-image: url(../images/bg-pattern-footer-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: top left;
+}
+
+.top-footer{
+    border-bottom: 1px solid RGB(131, 125, 135, 0.3); 
+}
+.bottom-footer dd, dt {
+    font-size: 0.85rem;
+    font-family: 'Karla', sans-serif;
+    font-weight: 700;
+    letter-spacing: 0.1rem;
+    color: hsl(256, 26%, 20%);
+    opacity: 90%;
+}
+.list-title{
+    color: hsl(273, 4%, 51%);
+}
+
+
+/*********************************************************** Mobile Version 375px */
+@media (max-width: 991px) {
+    body{
+        max-width: 375px;
+        margin: 0 auto;
+        text-align: center;
+    }
+    button[aria-expanded="true"] .navbar-toggler-icon{
+        background-image: url(../images/icon-close.svg);
+      }
+
+    .navbar-collapse{
+        background-color:  hsl(270, 9%, 17%);
+    }
+
+    /* No Hover States */
+    .navbar .navbar-nav .nav-link, .navbar button {
+        color: #ffffff;
+        font-size: 1rem;
+        font-weight: 400;
+    }
+    .navbar ul button {
+        border: 1.5px solid #ffffff;
+        color: #ffffff;
+        font-size: 0.9rem;
+        font-weight: 400;
+        text-decoration: none;
+        padding: 4% 30%!important;
+        margin: 0!important;
+    }
+    .navbar-collapse {
+        margin-top: 20px;
+    }
+    .navbar{
+        padding: 0;
+    }
+    .navbar ul{
+        height: 435px;
+        background-image: url(../images/bg-pattern-mobile-nav.svg);
+        background-repeat: no-repeat;
+        background-position: bottom;
+        background-size: 100% 40%;
+    }
+    h1{
+        font-family: 'DM Serif Display', serif;
+        font-size: 2.9rem;
+        line-height: 1;
+    }
+    h2{
+        font-family: 'DM Serif Display', serif;
+        font-size: 2.5rem;
+        line-height: 1;
+    }
+    h3{
+        font-family: 'DM Serif Display', serif;
+        font-size: 1.7rem;
+        line-height: 1;
+    }
+    .intro-rx {
+        background-image: url(../images/image-intro-mobile.jpg);
+        background-repeat: no-repeat;
+        position: relative;
+        height: 500px;
+        top: 0;
+        left: 15px;
+    }
+    .intro-sx{
+        padding: 10%;
+    }
+
+    .intro-right-pattern{
+        background-image: url(../images/bg-pattern-intro-right-mobile.svg);
+        background-repeat: no-repeat;
+        position: absolute;
+        bottom: -470px;
+    }
+    .intro-left-pattern{
+        background-image: url(../images/bg-pattern-intro-left-mobile.svg);
+        background-repeat: no-repeat;
+        position: absolute;
+        top:540px;
+    }
+    .line-light{
+        display: none;    
+    }
+    .middle{
+        padding: 25% 7% 15% 7%;
+    }
+    .how-we-work-section{
+        background-image: url(../images/bg-pattern-how-we-work-mobile.svg);
+        background-repeat: no-repeat;
+        background-position: top right;
+        background-color: hsl(256, 26%, 20%);
+        color: #ffffff;
+        margin: 25% 0;
+    }
+   
+}
